@@ -1,4 +1,4 @@
-1) Haz una clase llamada Persona que siga las siguientes condiciones:
+#1) Haz una clase llamada Persona que siga las siguientes condiciones:
 
  Sus atributos son: nombre, edad, DNI, sexo (H hombre, M mujer), peso y altura. No queremos que
 se accedan directamente a ellos. Piensa que modificador de acceso es el más adecuado, también su tipo.
