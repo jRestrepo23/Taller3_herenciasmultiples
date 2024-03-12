@@ -50,3 +50,84 @@ ideal con un mensaje.
  Por último, mostrar la información de cada objeto.
 
 Puedes usar métodos en la clase ejecutable, para que sea más fácil.
+
+2) Crearemos una superclase llamada Electrodoméstico con las siguientes características:
+ Sus atributos son precio base, color, consumo energético (letras entre A y F) y peso. Indica que se
+podrán heredar.
+
+ Por defecto, el color será blanco, el consumo energético sera F, el precioBase es de 100 € y el peso de
+5 kg. Usa constantes para ello.
+
+ Los colores disponibles son blancos, negro, rojo, azul y gris. No importa si el nombre está en
+mayúsculas o en minúsculas.
+
+ Los constructores que se implementarán serán
+
+o Un constructor por defecto.
+o Un constructor con el precio y peso. El resto por defecto.
+o Un constructor con todos los atributos.
+
+ Los métodos que implementara serán:
+
+o Métodos de todos los atributos.
+o comprobarConsumoEnergetico(char letra): comprueba que la letra es correcta, sino es
+correcta usara la letra por defecto. Se invocará al crear el objeto y no sera visible.
+o comprobarColor(String color): comprueba que el color es correcto, sino lo es usa el color
+por defecto. Se invocará al crear el objeto y no será visible.
+o precioFinal(): según el consumo energético, aumentara su precio, y según su tamaño,
+también. Esta es la lista de precios:
+
+![image](https://github.com/jRestrepo23/Taller3_herenciasmultiples/assets/161361508/07ec70f1-a9d4-4b45-b899-06b1aebdf796)
+
+Crearemos una subclase llamada Lavadora con las siguientes características:
+
+ Su atributo es carga, además de los atributos heredados.
+ Por defecto, la carga es de 5 kg. Usa una constante para ello.
+ Los constructores que se implementarán serán:
+
+o Un constructor por defecto.
+o Un constructor con el precio y peso. El resto por defecto.
+o Un constructor con la carga y el resto de atributos heredados. Recuerda que debes llamar al
+constructor de la clase padre.
+ Los métodos que se implementara serán:
+
+o Método get de carga.
+o precioFinal():, si tiene una carga mayor de 30 kg, aumentara el precio 50 €, sino es así no se
+incrementara el precio. Llama al método padre y añade el código necesario. Recuerda que las
+condiciones que hemos visto en la clase Electrodomestico también deben afectar al precio.
+Crearemos una subclase llamada Television con las siguientes características:
+
+ Sus atributos son resolución (en pulgadas) y sintonizador TDT (booleano), ademas de los atributos
+heredados.
+ Por defecto, la resolución sera de 20 pulgadas y el sintonizador sera false.
+
+ Los constructores que se implementarán serán:
+
+o Un constructor por defecto.
+o Un constructor con el precio y peso. El resto por defecto.
+o Un constructor con la resolución, sintonizador TDT y el resto de atributos heredados.
+Recuerda que debes llamar al constructor de la clase padre.
+
+ Los métodos que se implementara serán:
+
+o Método que devuelva la resolución y sintonizador TDT.
+o precioFinal(): si tiene una resolución mayor de 40 pulgadas, se incrementara el precio un
+30% y si tiene un sintonizador TDT incorporado, aumentara 50 €. Recuerda que las
+condiciones que hemos visto en la clase Electrodomestico también deben afectar al precio.
+
+Ahora crea una clase ejecutable que realice lo siguiente:
+
+ Crea un array de Electrodomesticos de 10 posiciones.
+ Asigna a cada posición un objeto de las clases anteriores con los valores que desees.
+ Ahora, recorre este array y ejecuta el método precioFinal().
+ Deberás mostrar el precio de cada clase, es decir, el precio de todas las televisiones, por un lado, el de
+las lavadoras por otro y la suma de los Electrodomesticos (puedes crear objetos Electrodomestico,
+pero recuerda que Television y Lavadora también son electrodomésticos). Recuerda el uso operador
+instanceof.
+
+Por ejemplo, si tenemos un Electrodoméstico con un precio final de 300, una lavadora de 200 y una
+televisión de 500, el resultado final será de 1000 (300+200+500) para electrodomésticos, 200 para lavadora y
+500 para televisión
+
+
+
